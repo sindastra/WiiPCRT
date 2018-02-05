@@ -26,4 +26,10 @@ reset_tool.exe 12345678
 
 ### Enjoy your unlocked Wii!
 
+# Additional notes:
+
+* If you get any errors about missing DLLs, try installing the vcredist files (all of them) from [HERE](https://github.com/sindastra/WiiPCRT/releases).
+* Yes, this runs under wine, if you must..
+* The button at the top leads to the GitHub page... You can report bugs/issues there!
+
 ###### Copyright (C) 2018 Sindastra. All rights reserved. This site is not affiliated with Nintendo.
