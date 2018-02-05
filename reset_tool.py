@@ -85,6 +85,8 @@ def output_code(timezone):
     code = ((crc ^ 0xaaaa) + 0x14c1) % 100000
     return str(code).zfill(5)
 
+print ("Copyright (C) 2018 Sindastra <https://github.com/sindastra/WiiPCRT>")
+print ("")
 print ("This program is distributed in the hope that it will be useful,")
 print ("but WITHOUT ANY WARRANTY; without even the implied warranty of")
 print ("MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the")
