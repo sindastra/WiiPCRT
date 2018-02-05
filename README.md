@@ -18,7 +18,7 @@
 
 ### Example (in CMD):
 ```
-reset_tool.exe 12345678
+> reset_tool.exe 12345678
 ```
 
 13. Choose the master key based on your time zone (date) from the output.
