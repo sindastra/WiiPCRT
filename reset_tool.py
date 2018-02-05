@@ -22,7 +22,7 @@
 import sys
 
 if len(sys.argv) < 2:
-    print "Usage: reset_tool.py <request code>"
+    print ("Usage: reset_tool.py <request code>")
     exit()
 
 request_code = sys.argv[1]
@@ -37,7 +37,7 @@ except ValueError:
     rcerr = 1
 
 if rcerr :
-    print "Please enter an 8 *digit* code!"
+    print ("Please enter an 8 *digit* code!")
     exit()
 
 import time
@@ -57,7 +57,7 @@ class CRC32:
     def __init__(self):
             self.gentable()
 
-    def crc32(self, input, crc=0xffffffffl):
+    def crc32(self, input, crc=0xffffffff):
             count = len(input)
             i = 0
             while count != 0:
@@ -74,7 +74,7 @@ class CRC32:
                     crc = i
                     for j in range(8):
                             if crc & 1:
-                                    crc = (crc >> 1) ^ 0xEDB88320l
+                                    crc = (crc >> 1) ^ 0xEDB88320
                             else:
                                     crc >>= 1
                     self.table.append(crc)
@@ -85,16 +85,16 @@ def output_code(timezone):
     code = ((crc ^ 0xaaaa) + 0x14c1) % 100000
     return str(code).zfill(5)
 
-print "This program is distributed in the hope that it will be useful,"
-print "but WITHOUT ANY WARRANTY; without even the implied warranty of"
-print "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the"
-print "GNU General Public License for more details."
-print ""
-print "You should have received a copy of the GNU General Public License"
-print "along with this program.  If not, see <http://www.gnu.org/licenses/>."
-print ""
-print "Pick the code for your current time zone: (and make sure the Wii has the correct date set!)"
-print ""
+print ("This program is distributed in the hope that it will be useful,")
+print ("but WITHOUT ANY WARRANTY; without even the implied warranty of")
+print ("MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the")
+print ("GNU General Public License for more details.")
+print ("")
+print ("You should have received a copy of the GNU General Public License")
+print ("along with this program.  If not, see <http://www.gnu.org/licenses/>.")
+print ("")
+print ("Pick the code for your current time zone: (and make sure the Wii has the correct date set!)")
+print ("")
 
-for i in xrange(3):
-    print "-> (" + output_code(timezones[i]) + ") <- " + opt_date(i)
+for i in range(3):
+    print ("-> (" + output_code(timezones[i]) + ") <- " + opt_date(i))
