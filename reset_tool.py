@@ -21,6 +21,8 @@
 
 import sys
 
+print ("WiiPCRT - Wii Parental Control (PIN) Reset Tool")
+
 if len(sys.argv) < 2:
     print ("Usage: "+sys.argv[0]+" <request code>")
     sys.exit()
