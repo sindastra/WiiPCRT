@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #
 # WiiPCRT
-# Wii Parental Control (PIN) Reset Tool – Based on https://wii.marcan.st/parental_src.py
+# Wii Parental Control (PIN) Reset Tool - Based on https://wii.marcan.st/parental_src.py
 #
 # Copyright (C) 2018 Sindastra <https://github.com/sindastra/WiiPCRT>
 # Copyright 2008-2009 Hector Martin Cantero <hector@marcansoft.com>
