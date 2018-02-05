@@ -21,4 +21,8 @@
 from distutils.core import setup
 import py2exe
 
-setup(console=['reset_tool.py'])
+setup(
+console=['reset_tool.py'],
+options={'py2exe': {'bundle_files': 1, 'compressed': True, 'optimize': 2}},
+zipfile = None
+)

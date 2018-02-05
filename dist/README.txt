@@ -8,3 +8,5 @@ reset_tool.exe
 They will be found here after running py2exe (from the parent directory).
 
 Note: Whether you'll get 32-bit or 64-bit executables depends on whether you used 32-bit or 64-bit Python!
+
+Update: Using the setup.py for py2exe now creates an all-in-one standalone executable.
