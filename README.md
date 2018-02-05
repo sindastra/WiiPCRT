@@ -12,7 +12,7 @@
 7. Select "I forgot."
 8. Select "I forgot." again.
 9. A screen (as pictured below) with an 8 digit request code will appear, write it down!
-![sample-screen](https://nintendo.com/consumer/assets/media/images/wii/en/ss-wii-confirmationnumber-270x228.png "Screen on your Wii")
+![sample-screen](request_sample.png "Screen on your Wii")
 10. Download the latest release of WiiPCRT [HERE](https://github.com/sindastra/WiiPCRT/releases).
 11. Open a CMD (Command Prompt) and navigate to the folder where you downloaded the reset_tool to.
 12. Run the reset_tool and pass the request code you wrote down as argument.
