@@ -41,7 +41,7 @@ except ValueError:
     rcerr = 1
 
 if rcerr :
-    print ("Please enter an 8 *digit* code!")
+    print ("Please enter an 8 *digit* request code!")
     sys.exit()
 
 import time
