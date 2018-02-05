@@ -22,7 +22,7 @@
 import sys
 
 if len(sys.argv) < 2:
-    print ("Usage: reset_tool.py <request code>")
+    print ("Usage: "+sys.argv[0]+" <request code>")
     sys.exit()
 
 request_code = sys.argv[1]
