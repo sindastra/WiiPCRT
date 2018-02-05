@@ -1,6 +1,6 @@
-### I present to you, **WiiPCRT!** The tool to generate a master key to unlock your parental-control on your Wii!
+## The tool to generate a master key to unlock your parental controls on your Wii!
 
-##### ...Inspired by a Wii I bought second-hand which had a parental-control pin set...
+##### (...Inspired by a Wii I bought second-hand which had a parental-control pin set...)
 
 # How it works:
 1. Navigate to the Wii Menu by pressing the HOME button on a Wii Remote and selecting "Wii Menu."
