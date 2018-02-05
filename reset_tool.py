@@ -23,7 +23,7 @@ import sys
 
 if len(sys.argv) < 2:
     print ("Usage: reset_tool.py <request code>")
-    exit()
+    sys.exit()
 
 request_code = sys.argv[1]
 
@@ -38,7 +38,7 @@ except ValueError:
 
 if rcerr :
     print ("Please enter an 8 *digit* code!")
-    exit()
+    sys.exit()
 
 import time
 
