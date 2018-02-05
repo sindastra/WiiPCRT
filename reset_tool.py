@@ -87,7 +87,11 @@ def output_code(timezone):
 
 print "This program is distributed in the hope that it will be useful,"
 print "but WITHOUT ANY WARRANTY; without even the implied warranty of"
-print "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
+print "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the"
+print "GNU General Public License for more details."
+print ""
+print "You should have received a copy of the GNU General Public License"
+print "along with this program.  If not, see <http://www.gnu.org/licenses/>."
 print ""
 print "Pick the code for your current time zone: (and make sure the Wii has the correct date set!)"
 print ""
