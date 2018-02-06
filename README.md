@@ -13,12 +13,17 @@
 8. Select "I forgot." again.
 9. A screen (as pictured below) with an 8 digit request code will appear, write it down!
 10. Download the latest release of WiiPCRT [[HERE]](https://github.com/sindastra/WiiPCRT/releases).
-11. Open a CMD (Command Prompt) and navigate to the folder where you downloaded the reset_tool to.
-12. Run the reset_tool and pass the request code you wrote down as argument.
+11. Run reset_tool.exe
+12. Enter the request code which you have written down earlier.
 
-### Example (in CMD):
+### You can also pass the request code as argument:
+#### Windows CMD (Command Prompt):
 ```
 > reset_tool.exe 12345678
+```
+#### On BSD, Darwin, Linux, Unix, etc.:
+```
+$ ./reset_tool.py 12345678
 ```
 
 13. Choose the master key based on your time zone (date) from the output.
