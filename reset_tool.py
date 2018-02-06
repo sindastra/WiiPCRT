@@ -35,6 +35,7 @@ def printhelp():
     print ("The following options are available:")
     print ("-h or --help     Show this help page.")
     print ("-t or --today    Only show unlock code for today's date.")
+    print ("--license        Display license information.")
 
 print ("WiiPCRT - Wii Parental Control (PIN) Reset Tool")
 print ("Copyright (C) 2018 Sindastra <https://github.com/sindastra/WiiPCRT>")
@@ -46,6 +47,7 @@ if has_args(["help","h","?"]):
     sys.exit(0)
 
 only_today = has_args(["today","t"])
+show_license = has_arg("license")
 
 if len(sys.argv) < 2:
     printhelp()
@@ -120,13 +122,23 @@ def output_code(timezone):
     code = ((crc ^ 0xaaaa) + 0x14c1) % 100000
     return str(code).zfill(5)
 
+if show_license:
+    print ("This program is free software: you can redistribute it and/or modify")
+    print ("it under the terms of the GNU General Public License as published by")
+    print ("the Free Software Foundation, either version 3 of the License, or")
+    print ("(at your option) any later version.")
+    print ("")
+
 print ("This program is distributed in the hope that it will be useful,")
 print ("but WITHOUT ANY WARRANTY; without even the implied warranty of")
 print ("MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the")
 print ("GNU General Public License for more details.")
-print ("")
-print ("You should have received a copy of the GNU General Public License")
-print ("along with this program.  If not, see <http://www.gnu.org/licenses/>.")
+if not show_license:
+    print ("Pass --license for more info.")
+if show_license:
+    print ("")
+    print ("You should have received a copy of the GNU General Public License")
+    print ("along with this program.  If not, see <http://www.gnu.org/licenses/>.")
 print ("---------------------------------------------------------------------")
 print ("Make sure the Wii and this computer have the correct (same) date set!")
 if not only_today:
