@@ -23,6 +23,7 @@ import sys
 
 print ("WiiPCRT - Wii Parental Control (PIN) Reset Tool")
 print ("Copyright (C) 2018 Sindastra <https://github.com/sindastra/WiiPCRT>")
+print ("Official website: https://sindastra.github.io/WiiPCRT/")
 print ("")
 
 if len(sys.argv) < 2:
