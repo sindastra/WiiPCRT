@@ -21,7 +21,7 @@
 
 import sys, os
 
-VERSION = "1.1"
+VERSION = "1.1.1"
 
 def has_arg(string):
     return (string in sys.argv or "-"+string in sys.argv or "--"+string in sys.argv or "/"+string in sys.argv)
@@ -84,7 +84,12 @@ if len(sys.argv) < 2:
     print ("Alternatively:")
     sys.stdout.write ("Input your 8 *digit* request code now: ")
     sys.stdout.flush()
-    request_code = sys.stdin.readline().rstrip()
+    try:
+        request_code = sys.stdin.readline().rstrip()
+    except KeyboardInterrupt:
+        print ("")
+        print ("Cancelled by user!")
+        sys.exit(0)
     print ("---------------------------------------------------------------------")
 else:
     request_code = sys.argv[len(sys.argv)-1]
