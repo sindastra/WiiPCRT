@@ -24,7 +24,7 @@ import sys
 print ("WiiPCRT - Wii Parental Control (PIN) Reset Tool")
 print ("Copyright (C) 2018 Sindastra <https://github.com/sindastra/WiiPCRT>")
 print ("Official website: https://sindastra.github.io/WiiPCRT/")
-print ("")
+print ("---------------------------------------------------------------------")
 
 if len(sys.argv) < 2:
     print ("Usage: "+sys.argv[0]+" <request code>")
@@ -100,7 +100,7 @@ print ("GNU General Public License for more details.")
 print ("")
 print ("You should have received a copy of the GNU General Public License")
 print ("along with this program.  If not, see <http://www.gnu.org/licenses/>.")
-print ("")
+print ("---------------------------------------------------------------------")
 print ("Make sure the Wii and this computer have the correct (same) date set!")
 print ("Pick the code for your current time zone (date):")
 print ("")
