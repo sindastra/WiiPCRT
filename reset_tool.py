@@ -21,7 +21,7 @@
 
 import sys, os
 
-VERSION = "1.0+ (DEVEL 20180206)"
+VERSION = "1.1"
 
 def has_arg(string):
     return (string in sys.argv or "-"+string in sys.argv or "--"+string in sys.argv or "/"+string in sys.argv)
