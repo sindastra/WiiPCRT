@@ -21,6 +21,8 @@
 
 import sys, os
 
+VERSION = "1.0+ (DEVEL 20180206)"
+
 def has_arg(string):
     return (string in sys.argv or "-"+string in sys.argv or "--"+string in sys.argv or "/"+string in sys.argv)
 
@@ -36,6 +38,7 @@ def printhelp():
     print ("-h or --help     Show this help page.")
     print ("-t or --today    Only show unlock code for today's date.")
     print ("--license        Display license information.")
+    print ("--version        Display version information.")
 
 print ("WiiPCRT - Wii Parental Control (PIN) Reset Tool")
 print ("Copyright (C) 2018 Sindastra <https://github.com/sindastra/WiiPCRT>")
@@ -44,6 +47,10 @@ print ("---------------------------------------------------------------------")
 
 if has_args(["help","h","?"]):
     printhelp()
+    sys.exit(0)
+
+if has_arg("version"):
+    print("Version: "+VERSION)
     sys.exit(0)
 
 only_today = has_args(["today","t"])
