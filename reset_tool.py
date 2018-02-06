@@ -41,7 +41,7 @@ print ("Copyright (C) 2018 Sindastra <https://github.com/sindastra/WiiPCRT>")
 print ("Official Website: https://sindastra.github.io/WiiPCRT/")
 print ("---------------------------------------------------------------------")
 
-if has_args(["help","h"]):
+if has_args(["help","h","?"]):
     printhelp()
     sys.exit(0)
 
