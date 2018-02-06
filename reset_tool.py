@@ -48,6 +48,8 @@ except ValueError:
 
 if rcerr :
     print ("Please enter an 8 *digit* request code!")
+    if os.name == "nt":
+        input ("Press Enter to exit now and try again.")
     sys.exit()
 
 import time
