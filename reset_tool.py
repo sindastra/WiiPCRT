@@ -28,14 +28,10 @@ print ("---------------------------------------------------------------------")
 
 if len(sys.argv) < 2:
     print ("Usage: "+sys.argv[0]+" <request code>")
-    if os.name == "nt":
-        print ("Start a CMD and navigate to the folder where the reset_tool is located.")
-        print ("Then run reset_tool with the request code.")
-        print ("Example: reset_tool.exe 12345678")
-        input ("Press Enter to exit now.")
-    sys.exit()
-
-request_code = sys.argv[1]
+    print ("Alternatively, input your 8 *digit* request code now: ")
+    request_code = sys.stdin.readline().rstrip()
+else:
+    request_code = sys.argv[1]
 
 rcerr = 0
 
