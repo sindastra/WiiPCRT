@@ -21,13 +21,34 @@
 
 import sys, os
 
+def has_arg(string):
+    return (string in sys.argv or "-"+string in sys.argv or "--"+string in sys.argv or "/"+string in sys.argv)
+
+def has_args(array):
+    for i in array:
+        if has_arg(i):
+            return True
+    return False
+
+def printhelp():
+    print ("Usage: "+sys.argv[0]+" [options] <request code>")
+    print ("The following options are available:")
+    print ("-h or --help     Show this help page.")
+    print ("-t or --today    Only show unlock code for today's date.")
+
 print ("WiiPCRT - Wii Parental Control (PIN) Reset Tool")
 print ("Copyright (C) 2018 Sindastra <https://github.com/sindastra/WiiPCRT>")
 print ("Official Website: https://sindastra.github.io/WiiPCRT/")
 print ("---------------------------------------------------------------------")
 
+if has_args(["help","h"]):
+    printhelp()
+    sys.exit(0)
+
+only_today = has_args(["today","t"])
+
 if len(sys.argv) < 2:
-    print ("Usage: "+sys.argv[0]+" <request code>")
+    printhelp()
     print ("Alternatively:")
     sys.stdout.write ("Input your 8 *digit* request code now: ")
     sys.stdout.flush()
@@ -108,11 +129,12 @@ print ("You should have received a copy of the GNU General Public License")
 print ("along with this program.  If not, see <http://www.gnu.org/licenses/>.")
 print ("---------------------------------------------------------------------")
 print ("Make sure the Wii and this computer have the correct (same) date set!")
-print ("Pick the code for your current time zone (date):")
+if not only_today:
+    print ("Pick the code for your current time zone (date):")
 print ("")
 
-for i in range(3):
-    print ("(" + output_code(timezones[i]) + ") <- Unlock key for " + opt_date(i))
+for i in range(1 if only_today else 3):
+    print ("(" + output_code(timezones[1 if only_today else i]) + ") <- Unlock key for " + opt_date(1 if only_today else i))
 
 if os.name == "nt":
     print ("---------------------------------------------------------------------")
