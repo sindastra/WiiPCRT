@@ -34,7 +34,7 @@ if len(sys.argv) < 2:
     request_code = sys.stdin.readline().rstrip()
     print ("---------------------------------------------------------------------")
 else:
-    request_code = sys.argv[1]
+    request_code = sys.argv[len(sys.argv)-1]
 
 rcerr = 0
 
