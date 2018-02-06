@@ -45,13 +45,16 @@ if rcerr :
     sys.exit()
 
 import time
+ctime = time.time()
+
+def timezone(diff):
+    t = time.gmtime(ctime + (0 +diff) * 3600 * 24)
+    return time.strftime("%m%d",t)
 
 timezones = [0,1,2]
-timezones[0] = "0109"
-timezones[1] = "0110"
-timezones[2] = "0111"
-
-ctime = time.time()
+timezones[0] = timezone(-1)
+timezones[1] = timezone(0)
+timezones[2] = timezone(+1)
 
 def opt_date(delta):
     t = time.gmtime(ctime + (delta-1) * 3600 * 24)
