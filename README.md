@@ -23,8 +23,8 @@
 # Additional notes:
 
 * If you get any errors about missing DLLs, try installing the vcredist files (all of them) from [[HERE (vcrun2008)]](https://www.microsoft.com/en-us/download/details.aspx?id=29) and [[HERE (vcrun2010)]](https://www.microsoft.com/en-us/download/details.aspx?id=5555).
-* Yes, this runs under wine, if you must..
 * The button at the top leads to the GitHub page... You can report bugs/issues there!
+* Yes, this runs under wine, if you must...
 * This is what a request code screen looks like on your Wii:
 
 ![sample-screen](request_sample.png "Screen on your Wii")
