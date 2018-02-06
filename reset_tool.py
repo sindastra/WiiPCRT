@@ -112,3 +112,7 @@ print ("")
 
 for i in range(3):
     print ("(" + output_code(timezones[i]) + ") <- Unlock key for " + opt_date(i))
+
+if os.name == "nt":
+    print ("---------------------------------------------------------------------")
+    input ("Press Enter to exit.")
