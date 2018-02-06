@@ -100,7 +100,8 @@ print ("")
 print ("You should have received a copy of the GNU General Public License")
 print ("along with this program.  If not, see <http://www.gnu.org/licenses/>.")
 print ("")
-print ("Pick the code for your current time zone: (and make sure the Wii has the correct date set!)")
+print ("Make sure the Wii and this computer have the correct (same) date set!")
+print ("Pick the code for your current time zone (date):")
 print ("")
 
 for i in range(3):
