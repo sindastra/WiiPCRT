@@ -40,7 +40,7 @@ def printhelp():
     print ("--license        Display license information.")
     print ("--version        Display version information.")
 
-print ("WiiPCRT - Wii Parental Control (PIN) Reset Tool")
+print ("WiiPCRT - Wii Parental Control (PIN) Reset Tool v"+VERSION)
 print ("Copyright (C) 2018 Sindastra <https://github.com/sindastra/WiiPCRT>")
 print ("Official Website: https://sindastra.github.io/WiiPCRT/")
 print ("---------------------------------------------------------------------")
