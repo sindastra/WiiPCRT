@@ -13,23 +13,22 @@
 8. Select "I forgot." again.
 9. A screen (as pictured below) with an 8 digit request code will appear, write it down!
 10. Download the latest release of WiiPCRT [[HERE]](https://github.com/sindastra/WiiPCRT/releases).
-11. Run reset_tool.exe
+11. Run the "reset_tool" which you just downloaded.
 12. Enter the request code which you have written down earlier.
+13. Choose the master key based on your time zone (date) from the output.
+14. Enter the master key into your Wii.
+
+##### Enjoy your unlocked Wii!
 
 ### You can also pass the request code as argument:
 #### Windows CMD (Command Prompt):
 ```
 > reset_tool.exe 12345678
 ```
-#### On BSD, Darwin, Linux, Unix, etc.:
+#### On BSD, Darwin, Linux, Unix, etc. (requires Python, duh):
 ```
 $ ./reset_tool.py 12345678
 ```
-
-13. Choose the master key based on your time zone (date) from the output.
-14. Enter the master key into your Wii.
-
-### Enjoy your unlocked Wii!
 
 # Additional notes:
 
