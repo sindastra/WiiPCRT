@@ -31,6 +31,7 @@ if len(sys.argv) < 2:
     sys.stdout.write ("Alternatively, input your 8 *digit* request code now: ")
     sys.stdout.flush()
     request_code = sys.stdin.readline().rstrip()
+    print ("---------------------------------------------------------------------")
 else:
     request_code = sys.argv[1]
 
