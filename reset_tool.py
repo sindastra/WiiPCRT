@@ -19,7 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import sys
+import sys, os
 
 print ("WiiPCRT - Wii Parental Control (PIN) Reset Tool")
 print ("Copyright (C) 2018 Sindastra <https://github.com/sindastra/WiiPCRT>")
@@ -28,6 +28,11 @@ print ("---------------------------------------------------------------------")
 
 if len(sys.argv) < 2:
     print ("Usage: "+sys.argv[0]+" <request code>")
+    if os.name == "nt":
+        print ("Start a CMD and navigate to the folder where the reset_tool is located.")
+        print ("Then run reset_tool with the request code.")
+        print ("Example: reset_tool.exe 12345678")
+        input ("Press Enter to exit now.")
     sys.exit()
 
 request_code = sys.argv[1]
