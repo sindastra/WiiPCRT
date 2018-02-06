@@ -39,4 +39,9 @@
 $ ./reset_tool.py 12345678
 ```
 
+# Supporting this project:
+* Report bugs/issues on the GitHub page.
+* Share good ideas for interesting features.
+* Donate Bitcoin to [1P5c5zrgAawGAKqQaN9fMeY13vG9AEcjy6](bitcoin:1P5c5zrgAawGAKqQaN9fMeY13vG9AEcjy6)
+
 ###### Copyright (C) 2018 Sindastra. All rights reserved. This site is not affiliated with Nintendo.
