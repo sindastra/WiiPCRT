@@ -58,7 +58,7 @@ timezones[2] = timezone(+1)
 
 def opt_date(delta):
     t = time.gmtime(ctime + (delta-1) * 3600 * 24)
-    return time.strftime("%a, %d %b %Y",t)
+    return time.strftime("%b. %d (%A)",t)
 
 class CRC32:
     def __init__(self):
@@ -104,4 +104,4 @@ print ("Pick the code for your current time zone: (and make sure the Wii has the
 print ("")
 
 for i in range(3):
-    print ("-> (" + output_code(timezones[i]) + ") <- " + opt_date(i))
+    print ("(" + output_code(timezones[i]) + ") <- Unlock key for " + opt_date(i))
