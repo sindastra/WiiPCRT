@@ -18,7 +18,16 @@
 13. Choose the master key based on your time zone (date) from the output.
 14. Enter the master key into your Wii.
 
-##### Enjoy your unlocked Wii!
+### Enjoy your unlocked Wii!
+
+# Additional notes:
+
+* If you get any errors about missing DLLs, try installing the vcredist files (all of them) from [[HERE (vcrun2008)]](https://www.microsoft.com/en-us/download/details.aspx?id=29) and [[HERE (vcrun2010)]](https://www.microsoft.com/en-us/download/details.aspx?id=5555).
+* Yes, this runs under wine, if you must..
+* The button at the top leads to the GitHub page... You can report bugs/issues there!
+* This is what a request code screen looks like on your Wii:
+
+![sample-screen](request_sample.png "Screen on your Wii")
 
 ### You can also pass the request code as argument:
 #### Windows CMD (Command Prompt):
@@ -29,14 +38,5 @@
 ```
 $ ./reset_tool.py 12345678
 ```
-
-# Additional notes:
-
-* If you get any errors about missing DLLs, try installing the vcredist files (all of them) from [[HERE (vcrun2008)]](https://www.microsoft.com/en-us/download/details.aspx?id=29) and [[HERE (vcrun2010)]](https://www.microsoft.com/en-us/download/details.aspx?id=5555).
-* Yes, this runs under wine, if you must..
-* The button at the top leads to the GitHub page... You can report bugs/issues there!
-* This is what a request code screen looks like on your Wii:
-
-![sample-screen](request_sample.png "Screen on your Wii")
 
 ###### Copyright (C) 2018 Sindastra. All rights reserved. This site is not affiliated with Nintendo.
