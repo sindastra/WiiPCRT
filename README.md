@@ -4,7 +4,7 @@
 
 # How it works:
 1. Navigate to the Wii Menu by pressing the HOME button on a Wii Remote and selecting "Wii Menu."
-2. Look at the date and time displayed on the Wii Menu and ensure they are correct. If incorrect, they will need to be changed in order for you to complete the PIN reset process. You will not be able to reset the PIN until the date is correct.
+2. Look at the date and time displayed on the Wii Menu and ensure they are correct. If incorrect, they will need to be changed in order for you to complete the PIN reset process. You will not be able to reset the PIN until the date is correct. [[HOW TO]](http://en-americas-support.nintendo.com/app/answers/detail/a_id/1776)
 3. Select the Wii Options icon in the lower-left corner of the Wii Channel Menu.
 4. Select "Wii Settings."
 5. Click on the blue arrow to reach the Wii System Settings 2 menu options.
