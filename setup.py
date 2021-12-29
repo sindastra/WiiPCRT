@@ -3,7 +3,7 @@
 # WiiPCRT
 # Wii Parental Control (PIN) Reset Tool
 #
-# Copyright (C) 2018 Sindastra <https://github.com/sindastra/WiiPCRT>
+# Copyright (C) 2018-2021 Sindastra <https://github.com/sindastra/WiiPCRT>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

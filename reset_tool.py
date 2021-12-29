@@ -3,7 +3,7 @@
 # WiiPCRT
 # Wii Parental Control (PIN) Reset Tool - Based on https://wii.marcan.st/parental_src.py
 #
-# Copyright (C) 2018 Sindastra <https://github.com/sindastra/WiiPCRT>
+# Copyright (C) 2018-2021 Sindastra <https://github.com/sindastra/WiiPCRT>
 # Copyright 2008-2009 Hector Martin Cantero <hector@marcansoft.com>
 #
 # This program is free software: you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 
 import sys, os
 
-VERSION = "1.1.1"
+VERSION = "1.1.2"
 
 def has_arg(string):
     return (string in sys.argv or "-"+string in sys.argv or "--"+string in sys.argv or "/"+string in sys.argv)
@@ -42,8 +42,9 @@ def printhelp():
 
 print ("---------------------------------------------------------------------")
 print ("WiiPCRT - Wii Parental Control (PIN) Reset Tool v"+VERSION)
-print ("Copyright (C) 2018 Sindastra <https://github.com/sindastra/WiiPCRT>")
+print ("Copyright (C) 2018-2021 Sindastra <https://github.com/sindastra/WiiPCRT>")
 print ("Official Website: https://sindastra.github.io/WiiPCRT/")
+print ("Special thanks to Marcan, who coded the cracking part.")
 print ("---------------------------------------------------------------------")
 
 if has_args(["help","h","?"]):
