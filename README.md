@@ -46,4 +46,5 @@ $ ./reset_tool.py 12345678
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W215OZB)
 
-###### Copyright (C) 2018 - 2019 Sindastra. All rights reserved. This site is not affiliated with Nintendo.
+###### Copyright (C) 2018 - 2021 Sindastra. All rights reserved. This site is not affiliated with Nintendo.
+###### Special thanks to Marcan, who coded the cracking part.
