@@ -1,1 +1,3 @@
-To use WiiPCRT (reset_tool.exe), you need to open cmd.exe (Command Prompt) and type in "reset_tool" and hit enter.
+To use WiiPCRT (reset_tool.exe), you can simply double-click reset_tool.exe,
+but if that does not work for you, you need to open cmd.exe (Command Prompt)
+and type in "reset_tool" and hit enter.
