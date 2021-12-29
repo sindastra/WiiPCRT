@@ -42,7 +42,7 @@ $ ./reset_tool.py 12345678
 # Supporting this project:
 * Report bugs/issues on the GitHub page.
 * Share good ideas for interesting features.
-* Donate Bitcoin (BTC) or Bitcoin Cash (BCH) to 1P5c5zrgAawGAKqQaN9fMeY13vG9AEcjy6
+* Tip a coffee!
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W215OZB)
 
