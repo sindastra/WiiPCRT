@@ -75,7 +75,7 @@ if show_license:
     print ("You should have received a copy of the GNU General Public License")
     print ("along with this program.  If not, see <http://www.gnu.org/licenses/>.")
     if os.name == "nt":
-        intput ("Press Enter to exit.")
+        input ("Press Enter to exit.")
     sys.exit(0)
 
 print ("---------------------------------------------------------------------")
